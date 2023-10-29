@@ -4,25 +4,11 @@ ChoosePlayerName:
 	call DisplayIntroNameTextBox
 	ld a, [wCurrentMenuItem]
 	and a
-	jr z, .customName
 	ld hl, DefaultNamesPlayerList
 	call GetDefaultName
 	ld de, wPlayerName
 	call OakSpeechSlidePicLeft
 	jr .done
-.customName
-	ld hl, wPlayerName
-	xor a ; NAME_PLAYER_SCREEN
-	ld [wNamingScreenType], a
-	call DisplayNamingScreen
-	ld a, [wStringBuffer]
-	cp "@"
-	jr z, .customName
-	call ClearScreen
-	call Delay3
-	ld de, RedPicFront
-	ld b, BANK(RedPicFront)
-	call IntroDisplayPicCenteredOrUpperRight
 .done
 	ld hl, YourNameIsText
 	jp PrintText
@@ -35,27 +21,14 @@ ChooseRivalName:
 	call OakSpeechSlidePicRight
 	ld de, DefaultNamesRival
 	call DisplayIntroNameTextBox
-	ld a, [wCurrentMenuItem]
+	; ld a, [wCurrentMenuItem]
+	ld a, 0 ; Only allow the first rival name to be loaded
 	and a
-	jr z, .customName
 	ld hl, DefaultNamesRivalList
 	call GetDefaultName
 	ld de, wRivalName
 	call OakSpeechSlidePicLeft
 	jr .done
-.customName
-	ld hl, wRivalName
-	ld a, NAME_RIVAL_SCREEN
-	ld [wNamingScreenType], a
-	call DisplayNamingScreen
-	ld a, [wStringBuffer]
-	cp "@"
-	jr z, .customName
-	call ClearScreen
-	call Delay3
-	ld de, Rival1Pic
-	ld b, $13
-	call IntroDisplayPicCenteredOrUpperRight
 .done
 	ld hl, HisNameIsText
 	jp PrintText
