@@ -1,14 +1,23 @@
 _RedsHouse1FMomWakeUpText::
-	text "MOM: Right."
-	line "All boys leave"
-	cont "home some day."
-	cont "It said so on TV."
+	text "MOM: Listen,"
+	line "<PLAYER>."
+	cont "You've spent"
+	cont "too many hours"
+	cont "inside playing"
+	cont "that dumb SNES."
 
-	para "PROF.OAK, next"
-	line "door, is looking"
-	cont "for you."
+	para "I need you to"
+	line "go outside and"
+	cont "touch some grass."
+
+	para "Once you're gone"
+	line "I'm going to"
+	cont "invite the local"
+	cont "#MON breeder"
+	cont "over for coffee."
 	done
 
+; TODO: Replace text
 _RedsHouse1FMomYouShouldRestText::
 	text "MOM: <PLAYER>!"
 	line "You should take a"
@@ -26,12 +35,13 @@ _RedsHouse1FMomLookingGreatText::
 _RedsHouse1FTVStandByMeMovieText::
 	text "There's a movie"
 	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	cont "are breeding"
+	cont "a #MON."
 
-	para "I better go too."
+	para "I wonder why mom"
+	line "put this on..."
 	done
 
 _RedsHouse1FTVWrongSideText::
-	text "Oops, wrong side."
+	text "Good old tube TVs!"
 	done

@@ -575,10 +575,14 @@ _IndigoPlateauHQText::
 	done
 
 _RedBedroomSNESText::
-	text "<PLAYER> is"
-	line "playing the SNES!"
-	cont "...Okay!"
-	cont "It's time to go!"
+	text "<PLAYER> has"
+	line "been playing the"
+	cont "SNES for 10 years!"
+	cont "..."
+
+	para "I think it's time"
+	line "to stop and go"
+	cont "touch grass."
 	done
 
 _Route15UpstairsBinocularsText::
@@ -800,6 +804,9 @@ _IndigoPlateauStatuesText3::
 _PokemonBooksText::
 	text "Crammed full of"
 	line "#MON books!"
+	
+	para "I wish I could"
+	line "read."
 	done
 
 _DiglettSculptureText::
@@ -1704,10 +1711,12 @@ _OakSpeechText1::
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@"
+	text "My specialty"
+	line "is breeding"
+	cont "#MON."
+
+	para "I love watching"
+	line "#MON breed.@"
 	text_end
 
 _OakSpeechText2B::
@@ -1717,16 +1726,20 @@ _OakSpeechText2B::
 	line "#MON are"
 	cont "pets. Others use"
 	cont "them for fights."
+	cont "Some, for love."
 
 	para "Myself..."
 
-	para "I study #MON"
-	line "as a profession."
+	para "I study exocit"
+	line "ways to breed"
+	cont "#MON."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "What is your"
+	line "name again?"
+
+	para "I totally forgot."
 	prompt
 
 _IntroduceRivalText::
@@ -1742,33 +1755,48 @@ _IntroduceRivalText::
 _OakSpeechText3::
 	text "<PLAYER>!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "Based on your"
+	line "IQ, I think you"
+	cont "would be better"
+	cont "suited as a"
+	cont "sewage worker."
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "But, I can't say"
+	line "no to your mom."
+
+	para "She begged me to"
+	line "get you out of"
+	cont "the house!"
+
+	para "Once you are gone"
+	line "I'll be spending"
+	cont "time alone with"
+	cont "her."
 	done
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "Give a nickname"
+	line "to @"
 	text_ram wcd6d
 	text "?"
 	done
 
 _YourNameIsText::
-	text "Right! So your"
+	text "Right! Your"
 	line "name is <PLAYER>!"
+	cont "...where did I"
+	cont "place my"
+	cont "dementia meds..."
 	prompt
 
 _HisNameIsText::
 	text "That's right! I"
 	line "remember now! His"
 	cont "name is <RIVAL>!"
+
+	para "I should really"
+	line "start taking my"
+	cont "meds again..."
 	prompt
 
 _WillBeTradedText::

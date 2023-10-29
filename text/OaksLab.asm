@@ -2,6 +2,9 @@ _OaksLabRivalGrampsIsntAroundText::
 	text "<RIVAL>: Yo"
 	line "<PLAYER>! Gramps"
 	cont "isn't around!"
+
+	para "Why don't you"
+	line "just piss off!"
 	done
 
 _OaksLabRivalGoAheadAndChooseText::
@@ -22,30 +25,36 @@ _OaksLabRivalMyPokemonLooksStrongerText::
 _OaksLabThoseArePokeBallsText::
 	text "Those are #"
 	line "BALLs. They"
-	cont "contain #MON!"
+	cont "contain #MON"
+	cont "the professor"
+	cont "bred himself!"
 	done
 
 _OaksLabYouWantCharmanderText::
 	text "So! You want the"
 	line "fire #MON,"
-	cont "CHARMANDER?"
+	cont "MOLTRES?"
 	done
 
 _OaksLabYouWantSquirtleText::
 	text "So! You want the"
-	line "water #MON,"
-	cont "SQUIRTLE?"
+	line "ice #MON,"
+	cont "ARTICUNO?"
 	done
 
 _OaksLabYouWantBulbasaurText::
 	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	line "electric #MON,"
+	cont "ZAPDOS?"
 	done
 
 _OaksLabMonEnergeticText::
-	text "This #MON is"
-	line "really energetic!"
+	text "This #MON looks"
+	line "really pathetic!"
+
+	para "You had 3 choices"
+	line "and you had to"
+	cont "pick that one?"
 	prompt
 
 _OaksLabReceivedMonText::
@@ -56,8 +65,15 @@ _OaksLabReceivedMonText::
 	text_end
 
 _OaksLabLastMonText::
-	text "That's PROF.OAK's"
-	line "last #MON!"
+	text "Hey, you already"
+	line "picked one!"
+
+	para "I guess you"
+	line "really are greedy."
+
+	para "It isn't my fault"
+	line "you regret your"
+	cont "choice."
 	done
 
 _OaksLabOak1WhichPokemonDoYouWantText::
@@ -77,7 +93,8 @@ _OaksLabOak1RaiseYourYoungPokemonText::
 	text "OAK: <PLAYER>,"
 	line "raise your young"
 	cont "#MON by making"
-	cont "it fight!"
+	cont "it fight,"
+	cont "like Michael Vick!"
 	done
 
 _OaksLabOak1DeliverParcelText::
@@ -144,7 +161,8 @@ _OaksLabGivePokeballsExplanationText::
 
 	para "A healthy #MON"
 	line "could escape. You"
-	cont "have to be lucky!"
+	cont "have to beat the"
+	line "crap out of it!"
 	done
 
 _OaksLabOak1ComeSeeMeSometimesText::
@@ -154,6 +172,10 @@ _OaksLabOak1ComeSeeMeSometimesText::
 	para "I want to know how"
 	line "your #DEX is"
 	cont "coming along."
+
+	para "But take your time."
+	cont "I'm going to keep"
+	line "your mom company."
 	done
 
 _OaksLabOak1HowIsYourPokedexComingText::
@@ -177,11 +199,15 @@ _OaksLabOak2Text::
 _OaksLabGirlText::
 	text "PROF.OAK is the"
 	line "authority on"
-	cont "#MON!"
+	cont "#MON breeding!"
 
 	para "Many #MON"
-	line "trainers hold him"
+	line "breeders hold him"
 	cont "in high regard!"
+
+	para "He is also very"
+	line "talented in"
+	cont "lovemaking!"
 	done
 
 _OaksLabRivalFedUpWithWaitingText::
@@ -196,38 +222,57 @@ _OaksLabOakChooseMonText::
 
 	para "Oh, that's right,"
 	line "I told you to"
-	cont "come! Just wait!"
+	cont "come!"
 
-	para "Here, <PLAYER>!"
+	para "Sorry, my dementia"
+	line "meds are missing."
+
+	para "Let's see..."
 
 	para "There are 3"
 	line "#MON here!"
-
-	para "Haha!"
 
 	para "They are inside"
 	line "the # BALLs."
 
 	para "When I was young,"
 	line "I was a serious"
-	cont "#MON trainer!"
+	cont "#MON breeder!"
 
-	para "In my old age, I"
-	line "have only 3 left,"
-	cont "but you can have"
-	cont "one! Choose!"
+	para "In fact,"
+	line "did you know that"
+	cont "in terms of male"
+	cont "human and female"
+	cont "#MON breeding.."
 	done
 
 _OaksLabRivalWhatAboutMeText::
 	text "<RIVAL>: Hey!"
-	line "Gramps! What"
-	cont "about me?"
+	line "Gramps!"
+	cont "We already"
+	cont "heard about this!"
+
+	para "...I really need"
+	line "to get your meds"
+	cont "refilled."
 	done
 
 _OaksLabOakBePatientText::
-	text "OAK: Be patient!"
-	line "<RIVAL>, you can"
-	cont "have one too!"
+	text "OAK: Oh, right."
+	line "Sorry, in my old"
+	cont "age I've gotten"
+	cont "quite lonely..."
+
+	para "After years of"
+	line "#MON breeding,"
+	cont "only 3 are left"
+
+	para "I guess I can let"
+	line "you have one!"
+	cont "Choose wisely."
+
+	para "No givesies"
+	line "backsies!"
 	done
 
 _OaksLabOakDontGoAwayYetText::
@@ -236,13 +281,18 @@ _OaksLabOakDontGoAwayYetText::
 	done
 
 _OaksLabRivalIllTakeThisOneText::
-	text "<RIVAL>: I'll take"
-	line "this one, then!"
+	text "<RIVAL>: These all"
+	line "look dumb..."
+	
+	para "Instead I'll"
+	line "choose my own"
+	cont "#MON that I"
+	cont "breeded myself!"
 	done
 
 _OaksLabRivalReceivedMonText::
-	text "<RIVAL> received"
-	line "a @"
+	text "<RIVAL> chose"
+	line "his own @"
 	text_ram wcd6d
 	text "!@"
 	text_end
@@ -250,33 +300,41 @@ _OaksLabRivalReceivedMonText::
 _OaksLabRivalIllTakeYouOnText::
 	text "<RIVAL>: Wait"
 	line "<PLAYER>!"
-	cont "Let's check out"
-	cont "our #MON!"
 
-	para "Come on, I'll take"
-	line "you on!"
+	para "I want to show"
+	line "you how much"
+	cont "more powerful"
+	cont "bred #MON"
+	cont "are in battle!"
 	done
 
+;TODO: This does not fully display... have not tested
 _OaksLabRivalIPickedTheWrongPokemonText::
 	text "WHAT?"
 	line "Unbelievable!"
-	cont "I picked the"
-	cont "wrong #MON!"
+	cont "I bred a"
+	cont "retard #MON!"
+	cont "Guess I'll have"
+	cont "to evolve my"
+	cont "Pikachu!"
 	prompt
 
+;TODO: This does not fully display...
 _OaksLabRivalAmIGreatOrWhatText::
 	text "<RIVAL>: Yeah! Am"
 	line "I great or what?"
+	cont "You should've"
+	cont "learned to"
+	cont "breed #MON"
+	cont "instead of playing"
+	cont "videogames all day"
 	prompt
 
 _OaksLabRivalSmellYouLaterText::
-	text "<RIVAL>: Okay!"
-	line "I'll make my"
-	cont "#MON fight to"
-	cont "toughen it up!"
-
-	para "<PLAYER>! Gramps!"
+	text "<PLAYER>! Gramps!"
 	line "Smell you later!"
+	cont "I got #MON"
+	cont "to go beat up."
 	done
 
 _OaksLabRivalGrampsText::
@@ -359,6 +417,7 @@ _OaksLabRivalLeaveItAllToMeText::
 	done
 
 _OaksLabScientistText::
-	text "I study #MON as"
-	line "PROF.OAK's AIDE."
+	text "I study #MON"
+	line "breeding for"
+	cont "the professor."
 	done
