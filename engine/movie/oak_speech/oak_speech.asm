@@ -50,12 +50,21 @@ OakSpeech:
 	call LoadTextBoxTilePatterns
 	call PrepareOakSpeech
 	predef InitPlayerData2
+
 	ld hl, wNumBoxItems
 	ld a, POTION
 	ld [wcf91], a
-	ld a, 1
+	ld a, 5
 	ld [wItemQuantity], a
 	call AddItemToInventory
+
+	ld hl, wNumBoxItems
+	ld a, PARLYZ_HEAL
+	ld [wcf91],  a
+	ld a, 4
+	ld [wItemQuantity],  a
+	call AddItemToInventory
+
 	ld a, [wDefaultMap]
 	ld [wDestinationMap], a
 	call PrepareForSpecialWarp
