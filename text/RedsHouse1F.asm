@@ -17,19 +17,23 @@ _RedsHouse1FMomWakeUpText::
 	cont "over for coffee."
 	done
 
-; TODO: Replace text
 _RedsHouse1FMomYouShouldRestText::
 	text "MOM: <PLAYER>!"
-	line "You should take a"
-	cont "quick rest."
+	line "I did not expect"
+	cont "you home so soon!"
+	
+	para "(I hope he"
+	line "doesn't find"
+	cont "the naked man"
+	cont "hiding in the"
+	cont "closet...)"
 	prompt
 
 _RedsHouse1FMomLookingGreatText::
-	text "MOM: Oh good!"
-	line "You and your"
+	text "MOM: You and your"
 	cont "#MON are"
-	cont "looking great!"
-	cont "Take care now!"
+	cont "all healed."
+	cont "Now GET OUT!"
 	done
 
 _RedsHouse1FTVStandByMeMovieText::

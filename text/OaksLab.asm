@@ -308,7 +308,6 @@ _OaksLabRivalIllTakeYouOnText::
 	cont "are in battle!"
 	done
 
-;TODO: This does not fully display... have not tested
 _OaksLabRivalIPickedTheWrongPokemonText::
 	text "WHAT?"
 	line "Unbelievable!"
@@ -319,7 +318,6 @@ _OaksLabRivalIPickedTheWrongPokemonText::
 	cont "Pikachu!"
 	prompt
 
-;TODO: This does not fully display...
 _OaksLabRivalAmIGreatOrWhatText::
 	text "<RIVAL>: Yeah! Am"
 	line "I great or what?"

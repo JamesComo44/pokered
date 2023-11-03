@@ -898,6 +898,11 @@ _UseNextMonText::
 _Rival1WinText::
 	text "<RIVAL>: Yeah! Am"
 	line "I great or what?"
+	cont "You should've"
+	cont "learned to"
+	cont "breed #MON"
+	cont "instead of playing"
+	cont "videogames all day"
 	prompt
 
 _PlayerBlackedOutText2::
@@ -905,12 +910,14 @@ _PlayerBlackedOutText2::
 	line "useable #MON!"
 
 	para "<PLAYER> blacked"
-	line "out!"
+	line "out and"
+	cont "peed his pants!"
 	prompt
 
 _LinkBattleLostText::
-	text "<PLAYER> lost to"
-	line "@"
+	text "<PLAYER> got his"
+	line "ass kicked by"
+	cont "@"
 	text_ram wTrainerName
 	text "!"
 	prompt
