@@ -5,8 +5,26 @@
 ;
 ; db TRAINER_CONST, PARTIES
 ; db POKE_INDEX, MOVE_INDEX, MOVE_CONST
-; TODO: THUNDER is wayy too strong lol
+
 SpecialTrainerMoves:
+	db RIVAL1, 1			; Green1 in parties.asm
+	db 1, 1, THUNDER_WAVE
+	db 1, 2, REFLECT
+	db 1, 3, SEISMIC_TOSS	; Counter Articuno
+	db 0
+
+	db RIVAL1, 2			; Green1 in parties.asm
+	db 1, 1, THUNDER_WAVE
+	db 1, 2, REFLECT
+	db 1, 3, QUICK_ATTACK	; Counter Zapdos
+	db 0
+
+	db RIVAL1, 3			; Green1 in parties.asm
+	db 1, 1, THUNDER_WAVE
+	db 1, 2, REFLECT
+	db 1, 3, CLAMP			; Counter Moltres
+	db 0
+
 	db BUG_CATCHER, 15
 	db 2, 2, TACKLE
 	db 2, 3, STRING_SHOT

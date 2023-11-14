@@ -317,9 +317,8 @@ OaksLabRivalChoosesStarterScript:
 	ld a, HS_STARTER_BALL_3
 .hideBallAndContinue
 	ld [wMissableObjectIndex], a
-	predef HideObject
-	call Delay3
 	ld a, [wRivalStarterTemp]
+	ld a, PIKACHU
 	ld [wRivalStarter], a
 	ld [wcf91], a
 	ld [wd11e], a
@@ -384,18 +383,18 @@ OaksLabRivalStartBattleScript:
 	; define which team rival uses, and fight it
 	ld a, OPP_RIVAL1
 	ld [wCurOpponent], a
-	ld a, [wRivalStarter]
+	ld a, [wPlayerStarter]
 	cp STARTER2
-	jr nz, .not_squirtle
-	ld a, $1
+	jr nz, .not_articuno
+	ld a, $1 ; Counter Articuno
 	jr .done
-.not_squirtle
+.not_articuno
 	cp STARTER3
-	jr nz, .not_bulbasaur
-	ld a, $2
+	jr nz, .not_zapdos
+	ld a, $2 ; Counter Zapdos
 	jr .done
-.not_bulbasaur
-	ld a, $3
+.not_zapdos
+	ld a, $3 ; Counter Moltres
 .done
 	ld [wTrainerNo], a
 	ld a, OAKSLAB_RIVAL
