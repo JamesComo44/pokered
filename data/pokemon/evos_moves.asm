@@ -979,7 +979,10 @@ MoltresEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 51, LEER
+	db 20, LEER
+	db 27, EMBER
+	db 33, DRILL_PECK
+	db 51, FLAMETHROWER
 	db 55, AGILITY
 	db 60, SKY_ATTACK
 	db 0
@@ -988,7 +991,10 @@ ArticunoEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 51, BLIZZARD
+	db 20, HAZE
+	db 33, DRILL_PECK
+	db 47, BLIZZARD
+	db 51, ICE_BEAM
 	db 55, AGILITY
 	db 60, MIST
 	db 0
@@ -997,7 +1003,10 @@ ZapdosEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 51, THUNDER
+	db 20, THUNDER_WAVE
+	db 32, DRILL_PECK
+	db 41, THUNDER
+	db 51, THUNDERBOLT
 	db 55, AGILITY
 	db 60, LIGHT_SCREEN
 	db 0
