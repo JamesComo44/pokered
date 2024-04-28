@@ -317,6 +317,8 @@ OaksLabRivalChoosesStarterScript:
 	ld a, HS_STARTER_BALL_3
 .hideBallAndContinue
 	ld [wMissableObjectIndex], a
+	predef HideObject
+	call Delay3
 	ld a, [wRivalStarterTemp]
 	ld a, PIKACHU
 	ld [wRivalStarter], a

@@ -287,7 +287,7 @@ _OaksLabRivalIllTakeThisOneText::
 	para "Instead I'll"
 	line "choose my own"
 	cont "#MON that I"
-	cont "breeded myself!"
+	cont "bred myself!"
 	done
 
 _OaksLabRivalReceivedMonText::
@@ -324,8 +324,9 @@ _OaksLabRivalAmIGreatOrWhatText::
 	cont "You should've"
 	cont "learned to"
 	cont "breed #MON"
-	cont "instead of playing"
-	cont "videogames all day"
+	cont "instead of"
+	cont "playing video"
+	cont "games all day"
 	prompt
 
 _OaksLabRivalSmellYouLaterText::
