@@ -18,10 +18,11 @@ UncompressMonSprite::
 ; $99 ≤ index:             bank $D ("Pics 5")
 	ld a, [wcf91]
 	ld b, a
-	cp MEW
-	ld a, BANK(MewPicFront)
-	jr z, .GotBank
-	ld a, b
+	; TODO: Remove
+	; cp MEW
+	; ld a, BANK(MewPicFront)
+	; jr z, .GotBank
+	; ld a, b
 	cp FOSSIL_KABUTOPS
 	ld a, BANK(FossilKabutopsPic)
 	jr z, .GotBank
