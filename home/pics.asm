@@ -16,7 +16,7 @@ UncompressMonSprite::
 	cp MON_GHOST
 	jr z, .RecallBank
 	ld a, [wMonHPicBank]
-	jr. GotBank
+	jr .GotBank
 .RecallBank
 	ld a, BANK(FossilKabutopsPic)
 .GotBank
