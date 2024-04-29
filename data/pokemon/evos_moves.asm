@@ -40,7 +40,7 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
+	dw FlairrelEvosMoves
 	dw MissingNo20EvosMoves
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
@@ -547,10 +547,17 @@ TangelaEvosMoves:
 	db 49, GROWTH
 	db 0
 
-MissingNo1FEvosMoves:
+FlairrelEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 11, PAY_DAY
+	db 17, WHIRLWIND
+	db 22, EMBER
+	db 29, DOUBLESLAP
+	db 35, SMOKESCREEN
+	db 47, FLAMETHROWER
+	db 61, EXPLOSION
 	db 0
 
 MissingNo20EvosMoves:

@@ -30,7 +30,7 @@ PokedexEntryPointers:
 	dw BlastoiseDexEntry
 	dw PinsirDexEntry
 	dw TangelaDexEntry
-	dw MissingNoDexEntry
+	dw FlairrelDexEntry
 	dw MissingNoDexEntry
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
@@ -405,6 +405,13 @@ TangelaDexEntry:
 	db 3,3
 	dw 770
 	text_far _TangelaDexEntry
+	text_end
+
+FlairrelDexEntry:
+	db "SQUIRREL@"
+	db 1,3
+	dw 12
+	text_far _FlairrelDexEntry
 	text_end
 
 GrowlitheDexEntry:
@@ -1256,6 +1263,6 @@ VictreebelDexEntry:
 
 MissingNoDexEntry:
 	db "???@"
-	db 10 ; 1.0 m
-	dw 100 ; 10.0 kg
-	db "コメント　さくせいちゅう@" ; コメント作成中 (Comment to be written)
+	db 69 ; 1.0 m
+	dw 420 ; 10.0 kg
+	db "WTF?" ;

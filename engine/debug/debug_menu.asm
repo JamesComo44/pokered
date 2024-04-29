@@ -97,7 +97,7 @@ TestBattle: ; unreferenced except in _DEBUG
 	ld [hl], a
 
 	; Give the player a level 20 Rhydon.
-	ld a, MEW
+	ld a, FLAIRREL
 	ld [wcf91], a
 	ld a, 20
 	ld [wCurEnemyLVL], a
@@ -107,7 +107,7 @@ TestBattle: ; unreferenced except in _DEBUG
 	call AddPartyMon
 
 	; Fight against a level 20 Rhydon.
-	ld a, RHYDON
+	ld a, FLAIRREL
 	ld [wCurOpponent], a
 
 	predef InitOpponent

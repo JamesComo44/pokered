@@ -298,6 +298,16 @@ _TangelaDexEntry::
 	next "shake as it walks"
 	dex
 
+_FlairrelDexEntry::
+	text "A small and cute"
+	next "litte forest"
+	next "critter."
+
+	page "Do not be fooled"
+	next "by it's size! The"
+	next "tail burns hot."
+	dex
+
 _GrowlitheDexEntry::
 	text "Very protective"
 	next "of its territory."
