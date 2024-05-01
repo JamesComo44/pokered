@@ -300,7 +300,7 @@ _TangelaDexEntry::
 
 _FlairrelDexEntry::
 	text "A small and cute"
-	next "litte forest"
+	next "little forest"
 	next "critter."
 
 	page "Do not be fooled"
