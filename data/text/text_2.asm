@@ -901,8 +901,8 @@ _Rival1WinText::
 	cont "You should've"
 	cont "learned to"
 	cont "breed #MON"
-	cont "instead of playing"
-	cont "videogames all day"
+	cont "instead of playin"
+	cont "videogames!"
 	prompt
 
 _PlayerBlackedOutText2::
