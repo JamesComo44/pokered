@@ -29,3 +29,9 @@
 *.sn*
 *.sa*
 *.sg1
+
+# VSCode
+.vscode
+
+# Build Artifacts
+*.ss*
