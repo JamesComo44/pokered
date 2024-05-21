@@ -96,7 +96,7 @@ TestBattle: ; unreferenced except in _DEBUG
 	dec a
 	ld [hl], a
 
-	; Give the player a level 20 Rhydon.
+	; Give the player a pokemon.
 	ld a, FLAIRREL
 	ld [wcf91], a
 	ld a, 20
@@ -106,7 +106,7 @@ TestBattle: ; unreferenced except in _DEBUG
 	ld [wCurMap], a
 	call AddPartyMon
 
-	; Fight against a level 20 Rhydon.
+	; Fight against a pokemon.
 	ld a, FLAIRREL
 	ld [wCurOpponent], a
 
