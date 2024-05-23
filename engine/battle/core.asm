@@ -6093,8 +6093,6 @@ GetCurrentMove:
 	ld de, wPlayerMoveNum
 	; Apply InitBattleVariables to TestBattle.
 	ld a, [wFlags_D733]
-	; bit BIT_TEST_BATTLE, a ; Uncomment to make all moves Pound
-	ld a, [wTestBattlePlayerSelectedMove]
 	jr nz, .selected
 	ld a, [wPlayerSelectedMove]
 .selected
