@@ -114,10 +114,10 @@ IF DEF(_DEBUG)
 	call DebugSetPokedexEntries
 	SetEvent EVENT_GOT_POKEDEX
 
-	; Rival chose Squirtle,
-	; Player chose Charmander.
+	; Rival chose Pikachu,
+	; Player chose Moltres.
 	ld hl, wRivalStarter
-	ld a, STARTER2
+	ld a, PIKACHU
 	ld [hli], a
 	inc hl ; hl = wPlayerStarter
 	ld a, STARTER1

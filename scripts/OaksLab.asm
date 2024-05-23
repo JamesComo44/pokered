@@ -304,20 +304,7 @@ OaksLabRivalChoosesStarterScript:
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, [wRivalStarterBallSpriteIndex]
-	cp OAKSLAB_CHARMANDER_POKE_BALL
-	jr nz, .not_charmander
-	ld a, HS_STARTER_BALL_1
-	jr .hideBallAndContinue
-.not_charmander
-	cp OAKSLAB_SQUIRTLE_POKE_BALL
-	jr nz, .not_squirtle
-	ld a, HS_STARTER_BALL_2
-	jr .hideBallAndContinue
-.not_squirtle
-	ld a, HS_STARTER_BALL_3
-.hideBallAndContinue
-	ld [wMissableObjectIndex], a
-	predef HideObject
+.giveRivalPikachu
 	call Delay3
 	ld a, [wRivalStarterTemp]
 	ld a, PIKACHU
