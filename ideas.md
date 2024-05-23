@@ -1,11 +1,13 @@
-# Flairrel
+# New Pokemon
+
+## Flairrel
 ### Wild Locations
 - Viridian Forest? (Replace Pikachu)
 
 ### Trainers
 - TODO: Define
 
-# Iblis
+## Iblis
 Need to Add pokemon to game. Stats, pics, etc.
 
 ### Catch Location
