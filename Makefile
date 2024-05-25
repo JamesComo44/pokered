@@ -171,8 +171,12 @@ gfx/intro/blue_jigglypuff_3.2bpp: rgbgfx += -Z
 gfx/intro/red_nidorino_1.2bpp: rgbgfx += -Z
 gfx/intro/red_nidorino_2.2bpp: rgbgfx += -Z
 gfx/intro/red_nidorino_3.2bpp: rgbgfx += -Z
+gfx/intro/pikachu_1.2bpp: rgbgfx += -Z
+gfx/intro/pikachu_2.2bpp: rgbgfx += -Z
+gfx/intro/pikachu_3.2bpp: rgbgfx += -Z
 gfx/intro/gengar.2bpp: rgbgfx += -Z
 gfx/intro/gengar.2bpp: tools/gfx += --remove-duplicates --preserve=0x19,0x76
+gfx/intro/old_man.2bpp: tools/gfx += --remove-duplicates
 
 gfx/credits/the_end.2bpp: tools/gfx += --interleave --png=$<
 

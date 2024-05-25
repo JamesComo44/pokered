@@ -24,8 +24,9 @@ https://www.pokencyclopedia.info/en/index.php?id=sprites
 ## Trainers
 It would be cool to include new trainer sprites and other things too
 
-## Modify Main Menu (intro)
+## [x] Modify Main Menu (intro)
 https://bulbapedia.bulbagarden.net/wiki/Game_intro
+https://github.com/Rangi42/redstarbluestar/blob/master/pic/other/oldman.png
 
 
 ## World Sprites & Tiles

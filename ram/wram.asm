@@ -434,7 +434,7 @@ wAILayer2Encouragement:: db
 wPlayerSubstituteHP:: db
 wEnemySubstituteHP:: db
 
-	ds 2
+	ds 2 ; TODO: Changed from 1 to 2. Does this take up space?
 
 ; 0=regular, 1=mimic, 2=above message box (relearn, heal pp..)
 wMoveMenuType:: db

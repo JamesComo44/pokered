@@ -31,13 +31,13 @@ PlayIntroScene:
 	ldh [hSCX], a
 	ld b, TILEMAP_GENGAR_INTRO_1
 	call IntroCopyTiles
-	ld a, 0
+	ld a, $5
 	ld [wBaseCoordX], a
-	ld a, 80
+	ld a, $45
 	ld [wBaseCoordY], a
-	lb bc, 6, 6
+	lb bc, $6, $6
 	call InitIntroNidorinoOAM
-	lb de, 80 / 2, MOVE_NIDORINO_RIGHT
+	lb de, $50 / $2, MOVE_NIDORINO_RIGHT
 	call IntroMoveMon
 	ret c
 
@@ -192,7 +192,7 @@ InitIntroNidorinoOAM:
 	ld [hli], a ; X
 	ld a, d
 	ld [hli], a ; tile
-	ld a, OAM_BEHIND_BG
+	ld a, OAM_OBP1
 	ld [hli], a ; attributes
 	inc d
 	dec c
@@ -439,27 +439,17 @@ GameFreakIntro:
 GameFreakIntroEnd:
 
 FightIntroBackMon:
-	INCBIN "gfx/intro/gengar.2bpp"
+	; INCBIN "gfx/intro/gengar.2bpp"
+	INCBIN "gfx/intro/old_man.2bpp"
 	ds 16, $00 ; blank tile
 FightIntroBackMonEnd:
 
-IF DEF(_RED)
 FightIntroFrontMon:
-	INCBIN "gfx/intro/red_nidorino_1.2bpp"
+	INCBIN "gfx/intro/pikachu_1.2bpp"
 FightIntroFrontMon2:
-	INCBIN "gfx/intro/red_nidorino_2.2bpp"
+	INCBIN "gfx/intro/pikachu_2.2bpp"
 FightIntroFrontMon3:
-	INCBIN "gfx/intro/red_nidorino_3.2bpp"
-ENDC
-
-IF DEF(_BLUE)
-FightIntroFrontMon:
-	INCBIN "gfx/intro/blue_jigglypuff_1.2bpp"
-FightIntroFrontMon2:
-	INCBIN "gfx/intro/blue_jigglypuff_2.2bpp"
-FightIntroFrontMon3:
-	INCBIN "gfx/intro/blue_jigglypuff_3.2bpp"
-ENDC
+	INCBIN "gfx/intro/pikachu_3.2bpp"
 
 FightIntroFrontMonEnd:
 
